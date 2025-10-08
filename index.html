@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+<section class="container">
+        <h1>Multiplication Table Project &#128514;</h1>
+        <h2>Multiplication Table Generator! &#128523</h2>
+        <h3>Create your own multiplication table that is rendered with an HTML table!</h3>
+
+<div class="generate-box">
+    <div class="inputs">
+        <label for="rows" class="rows">Rows:
+            <input id="rows" type="number" value="10" placeholder="How many rows?"/>
+        </label>
+
+        <label for="cols">Columns:
+            <input id="cols" type="number" value="10" placeholder="How many cols?"/>
+        </label>
+
+        <label for="highlight">Highlight:
+            <input id="highlight" type="number" placeholder="Highlight row & col??!"/>
+        </label>
+
+    </div>
+
+    <button id="generate" class='myBtn' onclick="createWithHtmlTable(getRowsDesired(), getColumnsDesired(), getHighlightValue())">Generate TABLE!</button>
+</div>
+
+    <section id="output"></section>
+</section>
+
+</body>
+    <script src="javascript.js"></script>
+</html>
